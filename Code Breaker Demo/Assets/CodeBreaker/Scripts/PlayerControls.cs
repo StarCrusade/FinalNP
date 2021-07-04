@@ -9,9 +9,11 @@ public class PlayerControls : MonoBehaviour
     Animator anim;
     public float speed = 6f; // Speed variable
     Rigidbody rb; 
-    GameObject player; 
+    GameObject player;
 
     //public float turnsmoothTime = 0.1f; //smoothing turn variable
+    public CharacterController Controller;
+    public float turnsmoothTime = 0.1f;
     float turnsmoothVelocity;
     // Start is called before the first frame update
     void Start()
@@ -29,18 +31,18 @@ public class PlayerControls : MonoBehaviour
          if (direction.magnitude >= 0.1f)// to check if there is movement in any direction
          {
               float targetAngle = Mathf.Atan2(direction.x, direction.z)/*returns the angle from the x/y axis  */ * Mathf.Rad2Deg + cam.eulerAngles.y;//adds the rotation of the camera on the Y axis
-             // float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnsmoothVelocity, turnsmoothTime);
-             // transform.rotation = Quaternion.Euler(0f, angle, 0f);
+              float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnsmoothVelocity, turnsmoothTime);
+              transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-             // Vector3 movedir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;// the addition of * Vector3.forward turns the rotation into a direction
+              Vector3 movedir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;// the addition of * Vector3.forward turns the rotation into a direction
              // gives you the direction you want to move with the roation of the camera
-             //Controller.Move(movedir.normalized * speed * Time.deltaTime /*makes it framerate independent*/);
+             Controller.Move(movedir.normalized * speed * Time.deltaTime /*makes it framerate independent*/);
          }
 
 
         gameObject.transform.position = new Vector3 (transform.position.x + (horizontal * speed* Time.deltaTime) , transform.position.y, transform.position.z + (vertical * speed * Time.deltaTime));
         
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) // Check if player is pressing W or Up 
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) // Check if player is pressing W or Up 
         {
             anim.SetBool("isSprinting", true);  // Set aniumation to run
         }
@@ -48,6 +50,7 @@ public class PlayerControls : MonoBehaviour
         {
             anim.SetBool("isSprinting", false); // set animation run to false
         }
+
 
     }
 }
