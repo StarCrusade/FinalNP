@@ -37,6 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\CodeBreaker\Scripts\PlayerControls.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example02 - Obstacles\ObstacleAnimation.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example03 - Runtime\LevelGenerator.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example05 - LowMan\LowMan\Scripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Scenes\3rdPersonWithAimMode\ActivateOnKeypress.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Scenes\Anywhere Door\PlayerLookAt.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Scenes\Anywhere Door\PlayerMovement.cs" />
@@ -60,6 +67,7 @@
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Shared\Scripts\SpawnInCircle.cs" />
      <None Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Scenes\Anywhere Door\ScreenCutoutShader.shader" />
+     <None Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\POLYGON city pack\Read_me.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
