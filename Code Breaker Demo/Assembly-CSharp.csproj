@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CodeBreaker\Scripts\PickupGun.cs" />
     <Compile Include="Assets\CodeBreaker\Scripts\PlayerControls.cs" />
+    <Compile Include="Assets\CodeBreaker\Scripts\ShootingBullets.cs" />
     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example02 - Obstacles\ObstacleAnimation.cs" />
     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example03 - Runtime\LevelGenerator.cs" />
     <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example05 - LowMan\LowMan\Scripts\ThirdPersonCharacter.cs" />
