@@ -39,7 +39,6 @@
      <Compile Include="Assets\CodeBreaker\Scripts\PickupGun.cs" />
      <Compile Include="Assets\CodeBreaker\Scripts\PlayerControls.cs" />
      <Compile Include="Assets\CodeBreaker\Scripts\ShootingBullets.cs" />
-     <Compile Include="Assets\GunFire.cs" />
      <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example02 - Obstacles\ObstacleAnimation.cs" />
      <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example03 - Runtime\LevelGenerator.cs" />
      <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\Example05 - LowMan\LowMan\Scripts\ThirdPersonCharacter.cs" />
@@ -69,7 +68,10 @@
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Shared\Scripts\SpawnInCircle.cs" />
-     <Compile Include="Assets\bulletScript.cs" />
+     <Compile Include="Assets\Scripts\GunFire.cs" />
+     <Compile Include="Assets\Scripts\HandGunScript.cs" />
+     <Compile Include="Assets\Scripts\ShotgunScript.cs" />
+     <Compile Include="Assets\Scripts\bulletScript.cs" />
      <None Include="Assets\Samples\Cinemachine\2.6.3\Cinemachine Example Scenes\Scenes\Anywhere Door\ScreenCutoutShader.shader" />
      <None Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\POLYGON city pack\Read_me.txt" />
