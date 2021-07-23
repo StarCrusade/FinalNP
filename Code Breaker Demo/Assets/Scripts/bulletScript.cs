@@ -5,7 +5,6 @@ using UnityEngine;
 public class bulletScript : MonoBehaviour
 {
     Rigidbody rb; 
-
     float bulletSpeed = 10; 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +24,15 @@ public class bulletScript : MonoBehaviour
     {
         yield return new WaitForSeconds(3); 
         Destroy(this.gameObject);
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Police")
+        {
+            Debug.Log("Hit police"); 
+            PoliceHealth.instance.currentHelath -= 10; 
+        }
     }
 
 }

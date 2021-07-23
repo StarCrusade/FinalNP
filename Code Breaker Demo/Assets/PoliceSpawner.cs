@@ -37,7 +37,7 @@ public class PoliceSpawner : MonoBehaviour
         timer += 1 * Time.deltaTime; 
         timer2 += 1 * Time.deltaTime; 
 
-        Debug.Log(timer + "This is the timer");
+       // Debug.Log(timer + "This is the timer");
         if(policeCount < 6 && timer >= 10)
         {
             timer = 0; 
