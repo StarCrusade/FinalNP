@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShotgunScript : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class ShotgunScript : MonoBehaviour
     public GameObject bulletPosition3;
     public GameObject bulletPosition4;
     public GameObject bulletPosition5;
-
+    public int maxAmmo = 4;
+    public int currentAmmo;
+    public Text Ammotext;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentAmmo = maxAmmo;
     }
 
     // Update is called once per frame
@@ -23,17 +26,24 @@ public class ShotgunScript : MonoBehaviour
     {
          if(Input.GetMouseButtonDown(0))
         {
+            if(currentAmmo > 0)
+            {
             Instantiate(bullet, bulletPosition.transform.position, Quaternion.identity);
             Instantiate(bullet, bulletPosition2.transform.position, Quaternion.identity);
             Instantiate(bullet, bulletPosition3.transform.position, Quaternion.identity);
             Instantiate(bullet, bulletPosition4.transform.position, Quaternion.identity);
             Instantiate(bullet, bulletPosition5.transform.position, Quaternion.identity);
-            
+            currentAmmo--;
+            }
 
-
-            //bulletThing.transform.rotation = Quaternion.Euler(90,0,0);
-
-            Debug.Log("I've fired the flip[pin gun");
+            else
+            {
+                Debug.Log("no ammo left");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            currentAmmo = maxAmmo;
         }
     }
 }
