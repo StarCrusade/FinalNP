@@ -10,6 +10,7 @@ public class PlayerControls : MonoBehaviour
     public float speed = 6f; // Speed variable
     Rigidbody rb; 
     GameObject player;
+    public GameObject Gun;
 
     //public float turnsmoothTime = 0.1f; //smoothing turn variable
     public CharacterController Controller;
@@ -52,5 +53,13 @@ public class PlayerControls : MonoBehaviour
         }
 
 
+    }
+
+   void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Gun")
+        {
+            Debug.Log("Hit Gun");
+        }
     }
 }

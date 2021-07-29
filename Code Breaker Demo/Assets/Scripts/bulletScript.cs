@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class bulletScript : MonoBehaviour
 {
+    GameObject police; 
     Rigidbody rb; 
     float bulletSpeed = 10; 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>(); 
+        rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector3(0,0,bulletSpeed);
+       // rb.velocity = new Vector3(0,0,bulletSpeed);
         StartCoroutine(DelayDestroy());
     }
-
 
     IEnumerator DelayDestroy()
     {

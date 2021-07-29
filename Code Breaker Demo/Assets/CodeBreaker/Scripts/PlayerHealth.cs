@@ -43,14 +43,20 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
-    {
-        Debug.Log(other.gameObject.tag);
+    // void OnCollisionEnter(Collision other)
+    // {
+        
 
-
-        if (other.gameObject.tag == "Bullet")
+    //     if (other.gameObject.tag == "Bullet")
+    //     {
+    //         Debug.Log("Bullet did damage");
+    //     }
+    // }
+     void OnCollisionEnter(Collision collision)
+    {       
+        if(collision.gameObject.tag == "Bullet")
         {
-            Debug.Log("Bullet did damage");
+            currentHelath -= 10; 
         }
     }
 }

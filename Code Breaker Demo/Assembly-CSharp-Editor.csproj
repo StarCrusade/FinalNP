@@ -41,18 +41,6 @@
      <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
      <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
      <Compile Include="Assets\NavMesh-Tutorial-master\NavMesh Example Project\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\Examples\Editor\NavMeshPrefabInstanceEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\Tests\Editor\NavMeshModifierVolumeInPrefabTests.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\Tests\Editor\NavMeshSurfaceInPrefabTests.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\Tests\Editor\NavMeshSurfaceInPrefabVariantTests.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\Tests\Editor\PrefabSavingUtil.cs" />
-     <Compile Include="Assets\NavMeshComponents-master\NavMeshComponents-master\Assets\Tests\Editor\PrefabStageAutoSavingUtil.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
@@ -103,8 +91,6 @@
      <Compile Include="Assets\Oculus\VR\Editor\PathHelper.cs" />
      <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRManagerEditor.cs" />
      <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVROverlayEditor.cs" />
-     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\unity5\Editor\CustomMaterialEditor.cs" />
-     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\unity5\Editor\Shader_softrim_dissolve.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

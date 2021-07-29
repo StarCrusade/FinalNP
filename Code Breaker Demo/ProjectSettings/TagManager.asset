@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Police
   - Bullet
+  - Astroid
+  - Alien
+  - Food
+  - bullet
+  - AlienBullet
+  - Gun
   layers:
   - Default
   - TransparentFX
